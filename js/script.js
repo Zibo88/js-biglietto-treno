@@ -7,6 +7,7 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare 
 //centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+// DATI IN POSSESSO
 
 // Prezzo del Biglietto di default per KM
 const priceForKm = 0.21;
@@ -19,7 +20,7 @@ const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));
 //Età utente
 const userAge = parseInt (prompt('Quanti anni hai?'));
 
-// DATI IN POSSESSO
+// DATI OTTENUTI
 
 // prezzo del biglietto default
 const ticketPrice = priceForKm * userKmToGo;
