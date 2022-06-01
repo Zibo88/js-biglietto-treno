@@ -10,32 +10,23 @@
 
 // Prezzo del Biglietto di default per KM
 const priceForKm = 0.21;
-// console.log (priceForKm);
 
 // DATI CHE CI DA L'UTENTE
 
 // Quanti km deve percorrere
-const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));
-// console.log (userKmToGo);    
+const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));   
 
 //Età utente
 const userAge = parseInt (prompt('Quanti anni hai?'));
-// console.log (userAge);
-
 
 // prezzo del biglietto default
 const ticketPrice = priceForKm * userKmToGo;
-// console.log(ticketPrice);
 
 // Biglietto scontnto del 20% per i minori
 const discountTicketPriceForMinors = ticketPrice * 0.2;
-// console.log (discountTicketPriceForMinors);
 
 // Biglietto scontanto del 40% per over 65
 const discountTicketPriceForOver65 = ticketPrice * 0.4;
-// console.log (discountTicketPriceForOver65);
-
-
 
 // prezzo biglietto minori
 const ticketPriceForMinors = discountTicketPriceForMinors * userKmToGo;
@@ -48,7 +39,6 @@ const ticketPriceForOver65 = discountTicketPriceForOver65 * userKmToGo;
 // Prezzo finale
 
 const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
-// console.log(finalPriceMinors);
 
 const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
