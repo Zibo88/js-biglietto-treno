@@ -42,6 +42,8 @@ const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
 
 const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
+
+
 // PARTE LOGICA
 
 let userMessage;
@@ -54,10 +56,15 @@ if (userAge < 18) {
     userMessage = ticketPrice;
 }
 
+
+
+
 // Stampo 
 
 // alert('Il prezzo del biglietto è di ' + userMessage)
-document.getElementById('price').innerHTML= "il costo del biglietto è di " + userMessage; 
+document.getElementById('price').innerHTML= "il costo del biglietto è di " + userMessage.toFixed(2); 
+
+
 
 
 
