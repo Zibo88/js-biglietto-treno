@@ -36,10 +36,11 @@ const ticketPriceForMinors = discountTicketPriceForMinors * userKmToGo;
 // prezzo biglietto over 65
 const ticketPriceForOver65 = discountTicketPriceForOver65 * userKmToGo;
 
-// Prezzo finale
+// PREZZO FINALE
 
+//prezzo per minore
 const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
-
+// /prezzo per Over 65
 const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
 // PARTE LOGICA
