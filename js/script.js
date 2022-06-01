@@ -19,6 +19,7 @@ const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));
 //Età utente
 const userAge = parseInt (prompt('Quanti anni hai?'));
 
+// DATI IN POSSESSO
 // prezzo del biglietto default
 const ticketPrice = priceForKm * userKmToGo;
 
