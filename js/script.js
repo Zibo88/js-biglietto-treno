@@ -48,11 +48,8 @@ let userMessage;
 
 if (userAge < 18) {
     userMessage = finalPriceMinors; 
-    // console.log(userMessage);
-
 } else if (userAge > 65) {
     userMessage = finalPriceOver65;
-    // console.log( userMessage);
 } else {
     userMessage = ticketPrice;
 }
