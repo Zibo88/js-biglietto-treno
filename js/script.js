@@ -12,14 +12,6 @@
 const priceForKm = 0.21;
 // console.log (priceForKm);
 
-// Biglietto scontnto del 20% per i minori
-const discountTicketPriceForMinors = priceForKm * 20 / 100;
-// console.log (discountTicketPriceForMinors);
-
-// Biglietto scontanto del 40% per over 65
-const discountTicketPriceForOver65 = priceForKm * 40 / 100;
-// console.log (discountTicketPriceForOver65);
-
 // DATI CHE CI DA L'UTENTE
 
 // Quanti km deve percorrere
@@ -30,9 +22,20 @@ const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));
 const userAge = parseInt (prompt('Quanti anni hai?'));
 // console.log (userAge);
 
+
 // prezzo del biglietto default
 const ticketPrice = priceForKm * userKmToGo;
 // console.log(ticketPrice);
+
+// Biglietto scontnto del 20% per i minori
+const discountTicketPriceForMinors = ticketPrice * 0.2;
+// console.log (discountTicketPriceForMinors);
+
+// Biglietto scontanto del 40% per over 65
+const discountTicketPriceForOver65 = ticketPrice * 0.4;
+// console.log (discountTicketPriceForOver65);
+
+
 
 // prezzo biglietto minori
 const ticketPriceForMinors = discountTicketPriceForMinors * userKmToGo;
@@ -47,10 +50,7 @@ const ticketPriceForOver65 = discountTicketPriceForOver65 * userKmToGo;
 const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
 // console.log(finalPriceMinors);
 
-const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65;
-console.log(finalPriceOver65);
-
-
+const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
 // PARTE LOGICA
 
@@ -69,8 +69,8 @@ if (userAge < 18) {
 
 // Stampo 
 
-alert('Il prezzo del biglietto è di ' + userMessage)
-// document.getElementById('price').innerHTML= "il costo del biglietto è di " + userMessage; 
+// alert('Il prezzo del biglietto è di ' + userMessage)
+document.getElementById('price').innerHTML= "il costo del biglietto è di " + userMessage; 
 
 
 
