@@ -20,6 +20,7 @@ const userKmToGo = parseInt (prompt('Quanti Km vuoi percorrere?'));
 const userAge = parseInt (prompt('Quanti anni hai?'));
 
 // DATI IN POSSESSO
+
 // prezzo del biglietto default
 const ticketPrice = priceForKm * userKmToGo;
 
@@ -31,11 +32,9 @@ const discountTicketPriceForOver65 = ticketPrice * 0.4;
 
 // prezzo biglietto minori
 const ticketPriceForMinors = discountTicketPriceForMinors * userKmToGo;
-// console.log (ticketPriceForMinors);
 
 // prezzo biglietto over 65
 const ticketPriceForOver65 = discountTicketPriceForOver65 * userKmToGo;
-// console.log(ticketPriceForOver65);
 
 // Prezzo finale
 
@@ -43,10 +42,9 @@ const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
 
 const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
-
-
 // PARTE LOGICA
 
+// Messaggio all'utente
 let userMessage;
 
 if (userAge < 18) {
@@ -56,9 +54,6 @@ if (userAge < 18) {
 } else {
     userMessage = ticketPrice;
 }
-
-
-
 
 // Stampo 
 
