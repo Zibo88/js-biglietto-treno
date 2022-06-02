@@ -31,16 +31,11 @@ const discountTicketPriceForMinors = ticketPrice * 0.2;
 // Biglietto scontanto del 40% per over 65
 const discountTicketPriceForOver65 = ticketPrice * 0.4;
 
-// prezzo biglietto minori
-const ticketPriceForMinors = discountTicketPriceForMinors * userKmToGo;
-
-// prezzo biglietto over 65
-const ticketPriceForOver65 = discountTicketPriceForOver65 * userKmToGo;
-
 // PREZZO FINALE
 
 //prezzo per minore
 const finalPriceMinors = ticketPrice - discountTicketPriceForMinors;
+
 // /prezzo per Over 65
 const finalPriceOver65 = ticketPrice - discountTicketPriceForOver65; 
 
